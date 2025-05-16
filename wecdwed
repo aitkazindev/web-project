@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="title_home">G3 Global Agency</title>
+
+    <!-- Mobile-friendly meta tags -->
+    <meta name="theme-color" content="#10B981" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <!-- Fonts (Noto Sans + KR for Korean support) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap&subset=cyrillic,latin,korean"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="max-w-7xl mx-auto bg-gray-50">
+    <!-- Header will be injected here -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="w-full">
+      <!-- Hero Section -->
+      <section class="relative overflow-hidden" data-aos="fade-up">
+        <!-- Dynamic Background -->
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-white via-green-50/50 to-white"
+        ></div>
+        <div
+          class="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(16,185,129,0.05)_50%,transparent_75%)] bg-[length:20px_20px]"
+        ></div>
+
+        <!-- Content Container -->
+        <div class="relative max-w-7xl mx-auto px-4">
+          <div class="grid md:grid-cols-2 gap-16 items-center">
+            <!-- Left Content -->
+            <div class="relative">
+              <!-- Decorative Line -->
+              <div
+                class="absolute -left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-green-400 via-green-300 to-transparent"
+              ></div>
+
+              <div class="space-y-8">
+                <!-- Badge with Animation -->
+                <div
+                  class="inline-flex items-center gap-3 px-5 py-2.5 bg-white rounded-full shadow-sm border border-green-100"
+                >
+                  <div class="flex gap-1">
+                    <span
+                      class="w-1.5 h-1.5 rounded-full bg-green-500 animate-[ping_1.5s_ease-in-out_infinite]"
+                    ></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+                  </div>
+                  <span
+                    class="text-sm font-medium text-green-700 tracking-wide"
+                    data-i18n="home_hero_badge"
+                  >
+                    Global Marketing Excellence
+                  </span>
+                </div>
+
+                <!-- Main Content -->
+                <div class="space-y-6">
+                  <h2
+                    class="text-4xl font-bold text-green-800 leading-tight"
+                    data-i18n="home_hero_title"
+                  >
+                    <span class="relative inline-block">
+                      LEAVE THE MARKETING
+                      <span
+                        class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-green-200 to-transparent"
+                      ></span>
+                    </span>
+                    <br />
+                    <span class="relative inline-block mt-2">
+                      TO US AND FOCUS ON
+                      <span
+                        class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-green-200 to-transparent"
+                      ></span>
+                    </span>
+                    <br />
+                    <span class="text-green-600">YOUR CORE BUSINESS.</span>
+                  </h2>
+
+                  <p
+                    class="text-lg text-gray-600 max-w-lg leading-relaxed"
+                    data-i18n="home_hero_subtitle"
+                  >
+                    Our company promotes products at a highly professional level
+                    and handles every step of overseas sales.
+                  </p>
+
+                  <!-- Buttons with Modern Design -->
+                  <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="brand.html" class="group">
+                      <button
+                        class="relative px-8 py-3.5 bg-green-600 text-white rounded-lg transition-all duration-300 hover:bg-green-700 min-h-[44px] min-w-[44px] overflow-hidden"
+                        data-i18n="home_hero_brands_button"
+                      >
+                        <span
+                          class="relative z-10 flex items-center gap-2 font-medium"
+                        >
+                          FOR BRANDS
+                          <svg
+                            class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="absolute inset-0 bg-gradient-to-r from-green-700 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        ></span>
+                      </button>
+                    </a>
+                    <a href="influencer.html" class="group">
+                      <button
+                        class="relative px-8 py-3.5 bg-white text-green-600 border-2 border-green-600 rounded-lg transition-all duration-300 hover:border-green-700 min-h-[44px] min-w-[44px] overflow-hidden"
+                        data-i18n="home_hero_creators_button"
+                      >
+                        <span
+                          class="relative z-10 flex items-center gap-2 font-medium"
+                        >
+                          FOR CREATORS
+                          <svg
+                            class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="absolute inset-0 bg-green-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        ></span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="relative">
+              <!-- Image Container with Modern Effects -->
+              <div
+                class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl"
+              >
+                <!-- Gradient Overlay -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"
+                ></div>
+
+                <!-- Main Image with Hover Effect -->
+                <div class="relative overflow-hidden">
+                  <img
+                    src="/assets/images/main-page.png"
+                    alt="Influencer working"
+                    class="w-full h-auto object-cover transition-transform duration-700 hover:scale-105"
+                    loading="lazy"
+                    srcset="
+                      /assets/images/main-page-small.png 400w,
+                      /assets/images/main-page.png       800w
+                    "
+                    sizes="(max-width: 768px) 400px, 800px"
+                  />
+                </div>
+
+                <!-- Decorative Elements -->
+                <div class="absolute top-0 right-0 w-32 h-32">
+                  <div
+                    class="absolute top-4 right-4 w-16 h-16 border-t-2 border-r-2 border-green-200/50 rounded-tr-lg"
+                  ></div>
+                </div>
+                <div class="absolute bottom-0 left-0 w-32 h-32">
+                  <div
+                    class="absolute bottom-4 left-4 w-16 h-16 border-b-2 border-l-2 border-green-200/50 rounded-bl-lg"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section class="py-8 bg-white" data-aos="fade-up">
+        <div class="max-w-6xl mx-auto">
+          <h2
+            class="text-4xl font-bold text-center mb-10 text-green-700"
+            data-i18n="home_why_choose_title"
+          >
+            Why Choose Us
+          </h2>
+          <p
+            class="text-center mb-12 text-gray-600"
+            data-i18n="home_why_choose_subtitle"
+          >
+            Here's what sets G3 Global Agency apart.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="p-6 rounded-lg text-center bg-green-50 shadow-md">
+              <div class="text-4xl mb-4">🎯</div>
+              <h3
+                class="text-xl font-semibold mb-2 text-green-700"
+                data-i18n="home_why_choose_1_title"
+              >
+                Focused Expertise
+              </h3>
+              <p class="text-gray-600" data-i18n="home_why_choose_1_text">
+                Over a decade of experience in international markets.
+              </p>
+            </div>
+            <div class="p-6 rounded-lg text-center bg-green-50 shadow-md">
+              <div class="text-4xl mb-4">🤝</div>
+              <h3
+                class="text-xl font-semibold mb-2 text-green-700"
+                data-i18n="home_why_choose_2_title"
+              >
+                Trusted Network
+              </h3>
+              <p class="text-gray-600" data-i18n="home_why_choose_2_text">
+                Strong local influencer and brand partnerships.
+              </p>
+            </div>
+            <div class="p-6 rounded-lg text-center bg-green-50 shadow-md">
+              <div class="text-4xl mb-4">⚡</div>
+              <h3
+                class="text-xl font-semibold mb-2 text-green-700"
+                data-i18n="home_why_choose_3_title"
+              >
+                Speed & Agility
+              </h3>
+              <p class="text-gray-600" data-i18n="home_why_choose_3_text">
+                Quick campaign launch and adaptive marketing strategy.
+              </p>
+            </div>
+            <div class="p-6 rounded-lg text-center bg-green-50 shadow-md">
+              <div class="text-4xl mb-4">🌍</div>
+              <h3
+                class="text-xl font-semibold mb-2 text-green-700"
+                data-i18n="home_why_choose_4_title"
+              >
+                Global Vision
+              </h3>
+              <p class="text-gray-600" data-i18n="home_why_choose_4_text">
+                CIS and Asian market specialists with a global mindset.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Approach -->
+      <h2
+        class="text-4xl font-bold text-center mb-10 text-green-700"
+        data-i18n="home_approach_title"
+      >
+        OUR APPROACH
+      </h2>
+
+      <section class="py-8 bg-white">
+        <div class="grid md:grid-cols-2 gap-12 items-center mx-4">
+          <!-- Visual/Mockup Cards -->
+          <div>
+            <img
+              src="/assets/images/main-execution.png"
+              alt="Creativity meets data illustration"
+              class="w-full h-auto rounded-lg shadow-lg object-cover"
+              loading="lazy"
+              srcset="
+                /assets/images/main-execution-small.png 400w,
+                /assets/images/main-execution.png       800w
+              "
+              sizes="(max-width: 768px) 400px, 800px"
+            />
+          </div>
+          <!-- Text Content -->
+          <div class="space-y-6">
+            <h3
+              class="text-xl font-semibold uppercase text-green-600"
+              data-i18n="home_approach_execution_subtitle"
+            >
+              EXECUTION
+            </h3>
+            <h2
+              class="text-3xl font-bold text-gray-800"
+              data-i18n="home_approach_execution_title"
+            >
+              AGILITY, TRUST, EFFECTIVENESS
+            </h2>
+            <p
+              class="text-lg text-gray-600"
+              data-i18n="home_approach_execution_text"
+            >
+              We're rewriting the narrative of influencer marketing by uniting
+              your brand with passionate creators who align with your purpose.
+              As trusted partners and guardians of your brand we build and
+              execute campaigns across every timeline, scope and requirement.
+            </p>
+            <a
+              href="brand.html"
+              class="inline-block px-6 py-2 rounded bg-green-600 text-white hover:bg-green-700 transition-colors"
+              data-i18n="home_approach_execution_button"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-8 bg-white">
+        <div class="grid md:grid-cols-2 gap-12 items-center mx-4">
+          <!-- Text Content -->
+          <div class="space-y-6">
+            <h3
+              class="text-xl font-semibold uppercase text-green-600"
+              data-i18n="home_approach_ideas_subtitle"
+            >
+              Ideas
+            </h3>
+            <h2
+              class="text-3xl font-bold text-gray-800"
+              data-i18n="home_approach_ideas_title"
+            >
+              WHERE CREATIVITY MEETS<br />DATA, MAGIC HAPPENS
+            </h2>
+            <p
+              class="text-lg text-gray-600"
+              data-i18n="home_approach_ideas_text"
+            >
+              Imagine the boldness of creativity fuelled by the precision of
+              analytics, guided by your brand's unique purpose — that's the
+              Influencer way. We design impactful campaigns that captivate
+              attention, inspire action, and boost CTR, views, and conversions.
+              Bringing your bespoke creative strategy to life for game-changing
+              commercial performance.
+            </p>
+            <a
+              href="influencer.html"
+              class="inline-block px-6 py-2 rounded bg-green-600 text-white hover:bg-green-700 transition-colors"
+              data-i18n="home_approach_ideas_button"
+            >
+              Learn More
+            </a>
+          </div>
+
+          <!-- Visual/Mockup Cards -->
+          <div>
+            <img
+              src="/assets/images/ideas-illustration.png"
+              alt="Creativity meets data illustration"
+              class="w-full h-auto rounded-lg shadow-lg object-cover"
+              loading="lazy"
+              srcset="
+                /assets/images/ideas-illustration-small.png 400w,
+                /assets/images/ideas-illustration.png       800w
+              "
+              sizes="(max-width: 768px) 400px, 800px"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Work -->
+      <section
+        class="py-8 bg-gradient-to-b from-white to-green-50 pattern-overlay"
+        data-aos="fade-up"
+      >
+        <div class="max-w-6xl mx-auto">
+          <h2
+            class="text-4xl font-bold text-center mb-10 text-green-700"
+            data-i18n="home_work_title"
+          >
+            OUR WORK
+          </h2>
+          <div class="text-center mb-12">
+            <a href="work.html">
+              <button
+                class="px-6 py-3 md:py-2 rounded bg-green-600 text-white hover:bg-green-700 transition-colors min-h-[44px] min-w-[44px]"
+                data-i18n="home_work_button"
+              >
+                VIEW ALL
+              </button>
+            </a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Portfolio Item 1 -->
+            <article
+              class="rounded-lg overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow portfolio-card"
+            >
+              <img
+                src="https://www.cosmeticsdesign-asia.com/resizer/v2/33TYGB3UJVK7VEXEADGKNHYZGE.jpg?auth=006d28aefa0b3d7ea0b7c88f2109604ec8961b343fad1b2a66a628f5c409c60e&smart=true"
+                alt="Portfolio Image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6 space-y-4">
+                <div class="flex items-center gap-4">
+                  <span
+                    class="font-semibold text-green-700"
+                    data-i18n="projects_item1_category"
+                    >Beauty Tech</span
+                  >
+                  <span class="text-gray-500">2024</span>
+                </div>
+                <h3
+                  class="text-xl font-bold text-green-700"
+                  data-i18n="projects_item1_title"
+                >
+                  Korean Beauty Brand Goes Global
+                </h3>
+                <p
+                  class="text-lg text-gray-600"
+                  data-i18n="projects_item1_description"
+                >
+                  Launching a Korean beauty brand in Central Asia through
+                  influencer collaborations.
+                </p>
+                <a
+                  href="projects/project-1.html"
+                  class="inline-block font-semibold text-green-600 hover:text-green-700 transition-colors"
+                  data-i18n="projects_view_project"
+                >
+                  View Project →
+                </a>
+              </div>
+            </article>
+
+            <!-- Portfolio Item 2 -->
+            <article
+              class="rounded-lg overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow portfolio-card"
+            >
+              <img
+                src="https://img.freepik.com/free-vector/isometric-appliances-store-composition-with-isolated-view-supermarket-with-multimedia-electronics-loudspeakers-laptops-people-vector-illustration_98292-8708.jpg"
+                alt="Portfolio Image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6 space-y-4">
+                <div class="flex items-center gap-4">
+                  <span
+                    class="font-semibold text-green-700"
+                    data-i18n="projects_item2_category"
+                    >Tech-Store</span
+                  >
+                  <span class="text-gray-500">2024</span>
+                </div>
+                <h3
+                  class="text-xl font-bold text-green-700"
+                  data-i18n="projects_item2_title"
+                >
+                  Tech-Store Promoting Campaign
+                </h3>
+                <p
+                  class="text-lg text-gray-600"
+                  data-i18n="projects_item2_description"
+                >
+                  Introducing Korean smart tech store for Mongolia and CIS
+                  markets through tech influencers.
+                </p>
+                <a
+                  href="projects/project-2.html"
+                  class="inline-block font-semibold text-green-600 hover:text-green-700 transition-colors"
+                  data-i18n="projects_view_project"
+                >
+                  View Project →
+                </a>
+              </div>
+            </article>
+
+            <!-- Portfolio Item 3 -->
+            <article
+              class="rounded-lg overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow portfolio-card"
+            >
+              <img
+                src="./assets/images/boosterminipro.jpg"
+                alt="Portfolio Image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6 space-y-4">
+                <div class="flex items-center gap-4">
+                  <span
+                    class="font-semibold text-green-700"
+                    data-i18n="projects_item3_category"
+                    >Medicube Mini</span
+                  >
+                  <span class="text-gray-500">2025</span>
+                </div>
+                <h3
+                  class="text-xl font-bold text-green-700"
+                  data-i18n="projects_item3_title"
+                >
+                  New Version of Famous Beauty Tech
+                </h3>
+                <p
+                  class="text-lg text-gray-600"
+                  data-i18n="projects_item3_description"
+                >
+                  Promoting mini version of Medicube booster for Mongolia and
+                  CIS markets through beauty influencers.
+                </p>
+                <a
+                  href="./projects/project-3.html"
+                  class="inline-block font-semibold text-green-600 hover:text-green-700 transition-colors"
+                  data-i18n="projects_view_project"
+                >
+                  View Project →
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section
+        class="py-8 bg-gradient-to-b from-white to-green-50 pattern-overlay"
+        data-aos="fade-up"
+      >
+        <div class="max-w-6xl mx-auto">
+          <h2
+            class="text-4xl font-bold text-center text-green-700"
+            data-i18n="home_team_title"
+          >
+            OUR TEAM
+          </h2>
+          <p
+            class="text-center mt-4 mb-8 text-gray-600"
+            data-i18n="home_team_subtitle"
+          >
+            Meet the powerhouse team reshaping the future of marketing.
+          </p>
+          <div class="text-center mb-12">
+            <a href="about.html">
+              <button
+                class="px-6 py-3 md:py-2 rounded bg-green-600 text-white hover:bg-green-700 transition-colors min-h-[44px] min-w-[44px]"
+                data-i18n="home_team_button"
+              >
+                ABOUT US
+              </button>
+            </a>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <div class="rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="https://cdn.prod.website-files.com/64a3d43ff2b9dad5135a9d90/64b867324e5c8f31ad2a590c_Day%202-6631.webp"
+                alt="Team member"
+                class="w-full h-auto object-cover"
+                loading="lazy"
+                srcset="
+                  https://cdn.prod.website-files.com/64a3d43ff2b9dad5135a9d90/64b867324e5c8f31ad2a590c_Day%202-6631-small.webp 400w,
+                  https://cdn.prod.website-files.com/64a3d43ff2b9dad5135a9d90/64b867324e5c8f31ad2a590c_Day%202-6631.webp       800w
+                "
+                sizes="(max-width: 768px) 400px, 800px"
+              />
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="https://cdn.prod.website-files.com/64a3d43ff2b9dad5135a9d90/64b8682bb2599a3207e2b188_Day%203-141-p-800.jpg"
+                alt="Team member"
+                class="w-full h-auto object-cover"
+                loading="lazy"
+                srcset="
+                  https://cdn.prod.website-files.com/64a3d43ff2b9dad5135a9d90/64b8682bb2599a3207e2b188_Day%203-141-small.jpg 400w,
+                  https://cdn.prod.website-files.com/64a3d43ff2b9dad5135a9d90/64b8682bb2599a3207e2b188_Day%203-141-p-800.jpg 800w
+                "
+                sizes="(max-width: 768px) 400px, 800px"
+              />
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="https://cdn.prod.website-files.com/64a3d43ff2b9dad5135a9d90/64b86883b9bb74a179a7c2ec_DSC06447-p-800.webp"
+                alt="Team member"
+                class="w-full h-auto object-cover"
+                loading="lazy"
+                srcset="
+                  https://cdn.prod.website-files.com/64a3d43ff2b9dad5135a9d90/64b86883b9bb74a179a7c2ec_DSC06447-small.webp 400w,
+                  https://cdn.prod.website-files.com/64a3d43ff2b9dad5135a9d90/64b86883b9bb74a179a7c2ec_DSC06447-p-800.webp 800w
+                "
+                sizes="(max-width: 768px) 400px, 800px"
+              />
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="https://cdn.prod.website-files.com/64a3d43ff2b9dad5135a9d90/64b86883b9bb74a179a7c2ec_DSC06447-p-800.webp"
+                alt="Team member"
+                class="w-full h-auto object-cover"
+                loading="lazy"
+                srcset="
+                  https://cdn.prod.website-files.com/64a3d43ff2b9dad5135a9d90/64b86883b9bb74a179a7c2ec_DSC06447-small.webp 400w,
+                  https://cdn.prod.website-files.com/64a3d43ff2b9dad5135a9d90/64b86883b9bb74a179a7c2ec_DSC06447-p-800.webp 800w
+                "
+                sizes="(max-width: 768px) 400px, 800px"
+              />
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="assets/images/ideas-illustration.png"
+                alt="Team member"
+                class="w-full h-auto object-cover"
+                loading="lazy"
+                srcset="
+                  assets/images/ideas-illustration-small.png 400w,
+                  assets/images/ideas-illustration.png       800w
+                "
+                sizes="(max-width: 768px) 400px, 800px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section
+        class="py-8 text-center bg-gradient-to-r from-green-600 to-green-500 text-white pattern-overlay"
+        data-aos="zoom-in"
+      >
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold mb-8" data-i18n="home_cta_title">
+            READY TO MAKE WAVES?
+          </h2>
+          <div>
+            <a href="contact.html">
+              <button
+                class="px-6 py-3 md:py-2 rounded bg-white text-green-700 hover:bg-gray-100 transition-colors font-semibold min-h-[44px] min-w-[44px]"
+                data-i18n="home_cta_button"
+              >
+                LET'S TALK
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer will be injected here -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>

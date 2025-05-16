@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="about_title">G3 Global Agency</title>
+
+    <!-- Mobile-friendly meta tags -->
+    <meta name="theme-color" content="var(--primary)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <!-- Fonts (Noto Sans + KR for Korean support) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap&subset=cyrillic,latin,korean"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+    <!-- Header will be injected here -->
+    <div id="header"></div>
+
+    <main class="w-full">
+      <!-- Hero Section -->
+      <section
+        class="bg-[var(--background-alt)] relative overflow-hidden py-12 md:py-20"
+        data-aos="fade-up"
+      >
+        <!-- Decorative Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+          <div
+            class="absolute top-0 right-0 w-48 h-48 animate-[float_6s_ease-in-out_infinite]"
+          >
+            <div
+              class="absolute top-4 right-4 w-24 h-24 border-t-2 border-r-2 border-[var(--primary-light)]/30 rounded-tr-lg"
+            ></div>
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-48 h-48 animate-[float_6s_ease-in-out_infinite]"
+            style="animation-delay: 2s"
+          >
+            <div
+              class="absolute bottom-4 left-4 w-24 h-24 border-b-2 border-l-2 border-[var(--primary-light)]/30 rounded-bl-lg"
+            ></div>
+          </div>
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-[var(--primary-light)]/5 rounded-full blur-3xl"
+          ></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 relative">
+          <!-- Hero Content with Flex Layout -->
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <!-- Left Side: Text Content -->
+            <div class="flex-1 text-center md:text-left">
+              <div
+                class="inline-block mb-4 px-3 py-1.5 bg-[var(--primary-light)]/10 rounded-full"
+              >
+                <span
+                  class="text-[var(--primary)] font-medium text-sm"
+                  data-i18n="about_hero_tag"
+                  >Your Global Partner</span
+                >
+              </div>
+              <h1
+                class="text-4xl md:text-5xl font-bold text-[var(--primary)] mb-6 relative inline-block"
+                data-i18n="about_hero_title"
+              >
+                About G3 Global Agency
+                <div
+                  class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[var(--primary)] to-[var(--primary-light)] rounded-full transform scale-x-75"
+                ></div>
+              </h1>
+              <p
+                class="text-lg text-[var(--text-light)] max-w-2xl leading-relaxed"
+                data-i18n="about_hero_subtitle"
+              >
+                A bridge between Korean brands and the markets of Mongolia and
+                CIS countries. We help businesses grow globally using
+                influencers and our own platforms.
+              </p>
+              <div
+                class="mt-6 flex flex-wrap gap-4 justify-center md:justify-start"
+              >
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-check-circle text-[var(--primary)]"></i>
+                  <span class="text-[var(--text-light)]">Global Reach</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-check-circle text-[var(--primary)]"></i>
+                  <span class="text-[var(--text-light)]">Expert Team</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-check-circle text-[var(--primary)]"></i>
+                  <span class="text-[var(--text-light)]">Proven Results</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side: CEO Image -->
+            <div class="flex-1 flex justify-center md:justify-end">
+              <div class="relative">
+                <div
+                  class="absolute inset-0 bg-[var(--primary-light)]/20 rounded-2xl blur-xl transform scale-110"
+                ></div>
+                <div
+                  class="relative max-w-[400px] md:max-w-[480px] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300"
+                >
+                  <img
+                    src="/assets/images/ceo.jpg"
+                    alt="CEO of G3 Global Agency"
+                    class="w-full h-auto"
+                    data-i18n-alt="about_ceo_alt"
+                  />
+                </div>
+                <!-- CEO Info Card -->
+                <!-- <div
+                  class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-white rounded-lg shadow-lg p-3 w-48 text-center"
+                >
+                  <h3
+                    class="text-lg font-bold text-[var(--primary)]"
+                    data-i18n-alt="about_ceo_name"
+                  >
+                    John Doe
+                  </h3>
+                  <p
+                    class="text-[var(--text-light)] text-xs"
+                    data-i18n="about_ceo_title"
+                  >
+                    Chief Executive Officer
+                  </p>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="py-16 md:py-24 bg-white" data-aos="fade-up">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-[var(--primary)] mb-6 relative inline-block mx-auto"
+              data-i18n="about_services_title"
+            >
+              What We Offer
+              <div
+                class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[var(--primary)] to-[var(--primary-light)] rounded-full transform scale-x-75"
+              ></div>
+            </h2>
+            <p
+              class="text-center text-[var(--text-light)] max-w-2xl mx-auto"
+              data-i18n="about_services_subtitle"
+            >
+              Comprehensive solutions for your international expansion needs
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div
+                class="absolute -top-4 -left-4 w-16 h-16 bg-[var(--primary-light)]/20 rounded-full opacity-50 group-hover:opacity-75 transition-opacity"
+              ></div>
+              <div class="relative z-10">
+                <div
+                  class="w-12 h-12 bg-[var(--primary)] rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform"
+                >
+                  <i class="fas fa-bullhorn text-white text-xl"></i>
+                </div>
+                <h3
+                  class="text-xl font-bold text-[var(--primary)] mb-3"
+                  data-i18n="about_service_1_title"
+                >
+                  Digital Marketing
+                </h3>
+                <p
+                  class="text-[var(--text-light)]"
+                  data-i18n="about_service_1_text"
+                >
+                  Boost product visibility with campaigns powered by verified
+                  influencers.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div
+                class="absolute -top-4 -left-4 w-16 h-16 bg-[var(--primary-light)]/20 rounded-full opacity-50 group-hover:opacity-75 transition-opacity"
+              ></div>
+              <div class="relative z-10">
+                <div
+                  class="w-12 h-12 bg-[var(--primary)] rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform"
+                >
+                  <i class="fas fa-shopping-bag text-white text-xl"></i>
+                </div>
+                <h3
+                  class="text-xl font-bold text-[var(--primary)] mb-3"
+                  data-i18n="about_service_2_title"
+                >
+                  Product Sales
+                </h3>
+                <p
+                  class="text-[var(--text-light)]"
+                  data-i18n="about_service_2_text"
+                >
+                  Sell on our platforms or through Instagram, Facebook, and
+                  more.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div
+                class="absolute -top-4 -left-4 w-16 h-16 bg-[var(--primary-light)]/20 rounded-full opacity-50 group-hover:opacity-75 transition-opacity"
+              ></div>
+              <div class="relative z-10">
+                <div
+                  class="w-12 h-12 bg-[var(--primary)] rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform"
+                >
+                  <i class="fas fa-truck text-white text-xl"></i>
+                </div>
+                <h3
+                  class="text-xl font-bold text-[var(--primary)] mb-3"
+                  data-i18n="about_service_3_title"
+                >
+                  Logistics & Delivery
+                </h3>
+                <p
+                  class="text-[var(--text-light)]"
+                  data-i18n="about_service_3_text"
+                >
+                  Reliable fulfillment and delivery across key regions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Journey -->
+      <section
+        class="py-16 md:py-24 bg-[var(--background-alt)]"
+        data-aos="fade-up"
+      >
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl font-bold text-[var(--primary)] mb-6 relative inline-block mx-auto"
+              data-i18n="about_journey_title"
+            >
+              Our Journey
+              <div
+                class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[var(--primary)] to-[var(--primary-light)] rounded-full transform scale-x-75"
+              ></div>
+            </h2>
+            <p
+              class="text-center text-[var(--text-light)] max-w-2xl mx-auto"
+              data-i18n="about_journey_text"
+            >
+              Since 2012, we've delivered tech and beauty products across
+              Mongolia, Russia, and Hong Kong. In 2023, our Mongolian branch
+              proved its strength. And in 2025, we launched our new vision: G3
+              Global Agency.
+            </p>
+          </div>
+          <div class="relative">
+            <!-- Timeline line with gradient -->
+            <div
+              class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-[var(--primary-light)] via-[var(--primary)] to-[var(--primary-light)] rounded-full"
+            ></div>
+
+            <div class="space-y-12">
+              <!-- 2012 -->
+              <div class="relative flex items-center group">
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-white border-2 border-[var(--primary)] shadow-sm transition-transform duration-300 group-hover:scale-110"
+                ></div>
+                <div
+                  class="ml-auto mr-12 w-5/12 transform transition-all duration-300 hover:translate-x-1"
+                >
+                  <div
+                    class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-300"
+                  >
+                    <h3 class="text-xl font-bold text-[var(--primary)] mb-2">
+                      2012
+                    </h3>
+                    <p
+                      class="text-[var(--text-light)] text-sm leading-relaxed"
+                      data-i18n="about_timeline_2012_text"
+                    >
+                      Started operations in Mongolia and CIS markets
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2023 -->
+              <div class="relative flex items-center group">
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-white border-2 border-[var(--primary)] shadow-sm transition-transform duration-300 group-hover:scale-110"
+                ></div>
+                <div
+                  class="ml-12 w-5/12 transform transition-all duration-300 hover:-translate-x-1"
+                >
+                  <div
+                    class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-300"
+                  >
+                    <h3 class="text-xl font-bold text-[var(--primary)] mb-2">
+                      2023
+                    </h3>
+                    <p
+                      class="text-[var(--text-light)] text-sm leading-relaxed"
+                      data-i18n="about_timeline_2023_text"
+                    >
+                      Mongolian branch expansion and success
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2025 -->
+              <div class="relative flex items-center group">
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-white border-2 border-[var(--primary)] shadow-sm transition-transform duration-300 group-hover:scale-110"
+                ></div>
+                <div
+                  class="ml-auto mr-12 w-5/12 transform transition-all duration-300 hover:translate-x-1"
+                >
+                  <div
+                    class="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow duration-300"
+                  >
+                    <h3 class="text-xl font-bold text-[var(--primary)] mb-2">
+                      2025
+                    </h3>
+                    <p
+                      class="text-[var(--text-light)] text-sm leading-relaxed"
+                      data-i18n="about_timeline_2025_text"
+                    >
+                      Launch of G3 Global Agency
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission Focus -->
+      <section class="py-16 md:py-24 bg-white" data-aos="fade-up">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-[var(--primary)] mb-6 relative inline-block mx-auto"
+              data-i18n="about_focus_title"
+            >
+              Focus on What Matters
+              <div
+                class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[var(--primary)] to-[var(--primary-light)] rounded-full transform scale-x-75"
+              ></div>
+            </h2>
+            <p
+              class="text-lg text-[var(--text-light)] max-w-2xl mx-auto"
+              data-i18n="about_focus_text"
+            >
+              We handle the full international sales cycle — from marketing to
+              last-mile delivery. You focus on innovation, we focus on impact.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section
+        class="py-16 md:py-24 text-center bg-gradient-to-r from-[var(--primary)] to-[var(--primary-light)] text-white"
+        data-aos="zoom-in"
+      >
+        <div class="max-w-4xl mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl md:text-4xl font-bold mb-6"
+              data-i18n="about_cta_title"
+            >
+              Ready to Scale Your Brand?
+            </h2>
+            <p
+              class="text-lg mb-8 max-w-2xl mx-auto"
+              data-i18n="about_cta_text"
+            >
+              Let's discuss how we can help you expand into new markets.
+            </p>
+          </div>
+          <a href="contact.html" class="group">
+            <button
+              class="relative px-8 py-4 bg-white text-[var(--primary)] rounded-lg transition-all duration-300 hover:bg-[var(--background)] min-h-[48px] min-w-[48px] overflow-hidden hover-lift"
+            >
+              <span
+                class="relative z-10 flex items-center gap-2 font-medium text-lg"
+              >
+                Get Started
+                <svg
+                  class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </span>
+              <span
+                class="absolute inset-0 bg-[var(--background-alt)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></span>
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer will be injected here -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>

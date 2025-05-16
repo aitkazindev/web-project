@@ -1,0 +1,178 @@
+<header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo and Brand -->
+      <a href="/index.html" class="flex items-center gap-2">
+        <img
+          src="/assets/images/logo.png"
+          alt="Global Agency Logo"
+          class="h-10 md:h-12 w-auto"
+        />
+        <div class="h-10 md:h-12 w-0.5 bg-[var(--primary)]"></div>
+        <div
+          class="flex flex-col leading-[1.1] font-semibold text-base text-[var(--primary)] hover:text-[var(--primary-dark)]"
+        >
+          <span class="text-[20px] md:text-[24px] uppercase font-extrabold"
+            >Global</span
+          >
+          <span class="text-[20px] md:text-[24px] uppercase font-extrabold"
+            >Agency</span
+          >
+        </div>
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-button"
+        class="md:hidden text-[var(--primary)] hover:text-[var(--primary-dark)] transition-colors"
+        aria-label="Toggle mobile menu"
+      >
+        <svg
+          class="w-7 h-7"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav
+        id="nav-menu"
+        data-mobile-menu="true"
+        class="hidden md:flex items-center space-x-8"
+      >
+        <a
+          href="/about.html"
+          class="text-[var(--text-dark)] hover:text-[var(--primary)] transition-colors font-medium text-lg"
+          data-i18n="nav_about"
+          >About</a
+        >
+        <a
+          href="/brand.html"
+          class="text-[var(--text-dark)] hover:text-[var(--primary)] transition-colors font-medium text-lg"
+          data-i18n="nav_brand"
+          >Business</a
+        >
+        <a
+          href="/influencer.html"
+          class="text-[var(--text-dark)] hover:text-[var(--primary)] transition-colors font-medium text-lg"
+          data-i18n="nav_influencer"
+          >Influencer</a
+        >
+        <a
+          href="/projects.html"
+          class="text-[var(--text-dark)] hover:text-[var(--primary)] transition-colors font-medium text-lg"
+          data-i18n="nav_projects"
+          >Projects</a
+        >
+        <a
+          href="/news.html"
+          class="text-[var(--text-dark)] hover:text-[var(--primary)] transition-colors font-medium text-lg"
+          data-i18n="nav_news"
+          >News</a
+        >
+        <a
+          href="/contact.html"
+          data-i18n="nav_contact"
+          class="inline-flex items-center px-5 py-2.5 rounded-lg border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition-colors font-medium text-lg"
+          >Contact us</a
+        >
+
+        <!-- Language Selector -->
+        <div class="relative">
+          <select
+            id="language-switcher"
+            class="appearance-none border-2 border-[var(--primary)] text-[var(--primary)] px-5 py-2.5 rounded-lg text-lg hover:bg-[var(--primary)] hover:text-white transition-colors bg-white pr-10 font-medium"
+          >
+            <option value="en">🇬🇧 EN</option>
+            <option value="ko">🇰🇷 KO</option>
+            <option value="ru">🇷🇺 RU</option>
+            <option value="mn">🇲🇳 MN</option>
+          </select>
+
+          <!-- Custom Dropdown Arrow -->
+          <div
+            class="pointer-events-none absolute right-3 top-1/2 transform -translate-y-1/2 text-[var(--primary)]"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+    <div class="px-4 py-3 space-y-2">
+      <a
+        href="/about.html"
+        class="block py-2.5 text-[var(--text-dark)] hover:text-[var(--primary)] transition-colors font-medium text-lg"
+        data-i18n="nav_about"
+        >About</a
+      >
+      <a
+        href="/brand.html"
+        class="block py-2.5 text-[var(--text-dark)] hover:text-[var(--primary)] transition-colors font-medium text-lg"
+        data-i18n="nav_brand"
+        >Business</a
+      >
+      <a
+        href="/influencer.html"
+        class="block py-2.5 text-[var(--text-dark)] hover:text-[var(--primary)] transition-colors font-medium text-lg"
+        data-i18n="nav_influencer"
+        >Influencer</a
+      >
+      <a
+        href="/projects.html"
+        class="block py-2.5 text-[var(--text-dark)] hover:text-[var(--primary)] transition-colors font-medium text-lg"
+        data-i18n="nav_projects"
+        >Projects</a
+      >
+      <a
+        href="/news.html"
+        class="block py-2.5 text-[var(--text-dark)] hover:text-[var(--primary)] transition-colors font-medium text-lg"
+        data-i18n="nav_news"
+        >News</a
+      >
+      <a
+        href="/contact.html"
+        class="block py-2.5 text-[var(--text-dark)] hover:text-[var(--primary)] transition-colors font-medium text-lg"
+        data-i18n="nav_contact"
+        >Contact us</a
+      >
+      <div class="py-2.5">
+        <select
+          id="mobile-language-switcher"
+          class="w-full appearance-none border-2 border-[var(--primary)] text-[var(--primary)] px-5 py-2.5 rounded-lg text-lg hover:bg-[var(--primary)] hover:text-white transition-colors bg-white pr-10 font-medium"
+        >
+          <option value="en">🇬🇧 EN</option>
+          <option value="ko">🇰🇷 KO</option>
+          <option value="ru">🇷🇺 RU</option>
+          <option value="mn">🇲🇳 MN</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Add padding to body to account for fixed header -->
+<div class="h-20"></div>

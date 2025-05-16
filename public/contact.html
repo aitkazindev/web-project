@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="title_contact">G3 Global Agency</title>
+
+    <!-- Mobile-friendly meta tags -->
+    <meta name="theme-color" content="#10B981" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <!-- Fonts (Noto Sans + KR for Korean support) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap&subset=cyrillic,latin,korean"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="max-w-7xl mx-auto bg-gray-50">
+    <!-- Header will be injected here -->
+    <div id="header"></div>
+
+    <main class="w-full">
+      <!-- Hero Section -->
+      <section
+        class="py-8 md:py-12 bg-gradient-to-br from-green-50 to-white pattern-overlay"
+        data-aos="fade-up"
+      >
+        <div class="max-w-4xl mx-auto text-center px-4">
+          <h1
+            class="text-4xl md:text-5xl font-bold text-green-800 mb-6"
+            data-i18n="contact_hero_title"
+          >
+            Get in Touch
+          </h1>
+          <p
+            class="text-lg text-gray-600 max-w-2xl mx-auto"
+            data-i18n="contact_hero_subtitle"
+          >
+            Ready to expand your brand? Let's discuss how we can help you
+            succeed in Mongolia and CIS markets.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Form and Info Section -->
+      <section class="py-12 bg-white" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Form Container -->
+            <div
+              class="bg-white rounded-lg shadow-lg p-6 border-4 border-green-300"
+            >
+              <!-- Form Type Tabs -->
+              <div class="flex border-b border-gray-200 mb-6">
+                <button
+                  id="companyTab"
+                  class="flex-1 py-2 px-3 text-center text-sm font-medium text-green-600 border-b-2 border-green-600 focus:outline-none"
+                  onclick="switchForm('company')"
+                >
+                  <i class="fas fa-building mr-1.5"></i>
+                  <span data-i18n="contact_tab_company">For Companies</span>
+                </button>
+                <button
+                  id="influencerTab"
+                  class="flex-1 py-2 px-3 text-center text-sm font-medium text-gray-500 hover:text-green-600 focus:outline-none"
+                  onclick="switchForm('influencer')"
+                >
+                  <i class="fas fa-user-circle mr-1.5"></i>
+                  <span data-i18n="contact_tab_influencer"
+                    >For Influencers</span
+                  >
+                </button>
+              </div>
+
+              <!-- Company Form -->
+              <form
+                id="companyForm"
+                name="company-form"
+                class="space-y-4 text-sm"
+              >
+                <input type="hidden" name="form-name" value="company-form" />
+
+                <div>
+                  <input
+                    type="text"
+                    name="full_name"
+                    placeholder="*Full Name"
+                    required
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    data-i18n-placeholder="contact_form_full_name"
+                  />
+                </div>
+
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="*Business Email Address"
+                    required
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    data-i18n-placeholder="contact_form_email"
+                  />
+                </div>
+
+                <div>
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Mobile Number (Include prefix e.g. +44)"
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    data-i18n-placeholder="contact_form_phone"
+                  />
+                </div>
+
+                <div>
+                  <input
+                    type="text"
+                    name="company_name"
+                    placeholder="*Company Name"
+                    required
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    data-i18n-placeholder="contact_form_company"
+                  />
+                </div>
+
+                <div>
+                  <input
+                    type="url"
+                    name="company_url"
+                    placeholder="*Company Website URL"
+                    required
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    data-i18n-placeholder="contact_form_website"
+                  />
+                </div>
+
+                <div>
+                  <select
+                    name="country"
+                    required
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white"
+                    data-i18n-placeholder="contact_form_country"
+                  >
+                    <option value="" data-i18n="contact_form_select_country">
+                      *Select Country
+                    </option>
+                    <option data-i18n="contact_form_country_usa">USA</option>
+                    <option data-i18n="contact_form_country_uk">UK</option>
+                    <option data-i18n="contact_form_country_korea">
+                      Korea
+                    </option>
+                    <option data-i18n="contact_form_country_other">
+                      Other
+                    </option>
+                  </select>
+                </div>
+
+                <div>
+                  <select
+                    name="industry"
+                    required
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white"
+                    data-i18n-placeholder="contact_form_industry"
+                  >
+                    <option value="" data-i18n="contact_form_select_industry">
+                      *Select Company Industry
+                    </option>
+                    <option data-i18n="contact_form_industry_fashion">
+                      Fashion
+                    </option>
+                    <option data-i18n="contact_form_industry_tech">Tech</option>
+                    <option data-i18n="contact_form_industry_beauty">
+                      Beauty
+                    </option>
+                    <option data-i18n="contact_form_industry_other">
+                      Other
+                    </option>
+                  </select>
+                </div>
+
+                <div>
+                  <select
+                    name="budget"
+                    required
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white"
+                    data-i18n-placeholder="contact_form_budget"
+                  >
+                    <option value="" data-i18n="contact_form_select_budget">
+                      *Select Campaign Budget
+                    </option>
+                    <option data-i18n="contact_form_budget_under_1000">
+                      Under $1,000
+                    </option>
+                    <option data-i18n="contact_form_budget_1000_5000">
+                      $1,000 - $5,000
+                    </option>
+                    <option data-i18n="contact_form_budget_5000_10000">
+                      $5,000 - $10,000
+                    </option>
+                    <option data-i18n="contact_form_budget_over_10000">
+                      Over $10,000
+                    </option>
+                  </select>
+                </div>
+
+                <div>
+                  3
+                  <select
+                    name="referral"
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white"
+                    data-i18n-placeholder="contact_form_referral"
+                  >
+                    <option value="" data-i18n="contact_form_select_referral">
+                      How did you find us?
+                    </option>
+                    <option data-i18n="contact_form_referral_google">
+                      Google
+                    </option>
+                    <option data-i18n="contact_form_referral_social">
+                      Social Media
+                    </option>
+                    <option data-i18n="contact_form_referral_referral">
+                      Referral
+                    </option>
+                    <option data-i18n="contact_form_referral_other">
+                      Other
+                    </option>
+                  </select>
+                </div>
+
+                <div>
+                  <textarea
+                    name="message"
+                    placeholder="How can we help?"
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent min-h-[120px]"
+                    data-i18n-placeholder="contact_form_message"
+                  ></textarea>
+                </div>
+
+                <div class="flex items-start space-x-2">
+                  <input
+                    type="checkbox"
+                    name="subscribe"
+                    class="w-3.5 h-3.5 text-green-600 focus:ring-green-500 border-gray-300 rounded"
+                  />
+                  <label
+                    class="text-xs text-gray-600"
+                    data-i18n="contact_form_subscribe"
+                  >
+                    I would like important updates and news sent to my email
+                  </label>
+                </div>
+
+                <div class="flex items-start space-x-2">
+                  <input
+                    type="checkbox"
+                    name="agree"
+                    required
+                    class="w-3.5 h-3.5 text-green-600 focus:ring-green-500 border-gray-300 rounded"
+                  />
+                  <label class="text-xs text-gray-600">
+                    <span data-i18n="contact_form_agree">I agree to</span>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="text-green-600 hover:text-green-700"
+                      data-i18n="contact_form_privacy"
+                    >
+                      privacy policy
+                    </a>
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-2 text-sm rounded-lg font-medium hover:from-green-700 hover:to-green-800 transition-all duration-300 shadow-lg"
+                  data-i18n="contact_form_submit"
+                >
+                  Submit
+                </button>
+              </form>
+
+              <!-- Influencer Form -->
+              <form
+                id="influencerForm"
+                name="influencer-form"
+                class="space-y-4 text-sm hidden"
+              >
+                <input type="hidden" name="form-name" value="influencer-form" />
+
+                <div>
+                  <input
+                    type="text"
+                    name="full_name"
+                    placeholder="*Full Name"
+                    required
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    data-i18n-placeholder="contact_form_full_name"
+                  />
+                </div>
+
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="*Email Address"
+                    required
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    data-i18n-placeholder="contact_form_email"
+                  />
+                </div>
+
+                <div>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="*Phone Number (Include prefix e.g. +44)"
+                    required
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    data-i18n-placeholder="contact_form_phone"
+                  />
+                </div>
+
+                <div>
+                  <input
+                    type="url"
+                    name="instagram"
+                    placeholder="*Instagram Profile URL"
+                    required
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    data-i18n-placeholder="contact_form_instagram"
+                  />
+                </div>
+
+                <div>
+                  <input
+                    type="url"
+                    name="tiktok"
+                    placeholder="TikTok Profile URL"
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    data-i18n-placeholder="contact_form_tiktok"
+                  />
+                </div>
+
+                <div>
+                  <input
+                    type="url"
+                    name="youtube"
+                    placeholder="YouTube Channel URL"
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    data-i18n-placeholder="contact_form_youtube"
+                  />
+                </div>
+
+                <div>
+                  <select
+                    name="platform"
+                    required
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white"
+                    data-i18n-placeholder="contact_form_platform"
+                  >
+                    <option value="" data-i18n="contact_form_select_platform">
+                      *Select Your Main Platform
+                    </option>
+                    <option
+                      value="instagram"
+                      data-i18n="contact_form_platform_instagram"
+                    >
+                      Instagram
+                    </option>
+                    <option
+                      value="tiktok"
+                      data-i18n="contact_form_platform_tiktok"
+                    >
+                      TikTok
+                    </option>
+                    <option
+                      value="youtube"
+                      data-i18n="contact_form_platform_youtube"
+                    >
+                      YouTube
+                    </option>
+                    <option
+                      value="other"
+                      data-i18n="contact_form_platform_other"
+                    >
+                      Other
+                    </option>
+                  </select>
+                </div>
+
+                <div>
+                  <select
+                    name="followers"
+                    required
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white"
+                    data-i18n-placeholder="contact_form_followers"
+                  >
+                    <option value="" data-i18n="contact_form_select_followers">
+                      *Select Your Follower Count
+                    </option>
+                    <option
+                      value="1k-10k"
+                      data-i18n="contact_form_followers_1k_10k"
+                    >
+                      1,000 - 10,000
+                    </option>
+                    <option
+                      value="10k-50k"
+                      data-i18n="contact_form_followers_10k_50k"
+                    >
+                      10,000 - 50,000
+                    </option>
+                    <option
+                      value="50k-100k"
+                      data-i18n="contact_form_followers_50k_100k"
+                    >
+                      50,000 - 100,000
+                    </option>
+                    <option
+                      value="100k+"
+                      data-i18n="contact_form_followers_100k_plus"
+                    >
+                      100,000+
+                    </option>
+                  </select>
+                </div>
+
+                <div>
+                  <textarea
+                    name="message"
+                    placeholder="Tell us about yourself and your content"
+                    required
+                    class="w-full px-3 py-2 text-sm rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent min-h-[120px]"
+                    data-i18n-placeholder="contact_form_influencer_message"
+                  ></textarea>
+                </div>
+
+                <div class="flex items-start space-x-2">
+                  <input
+                    type="checkbox"
+                    name="subscribe"
+                    class="w-3.5 h-3.5 text-green-600 focus:ring-green-500 border-gray-300 rounded"
+                  />
+                  <label
+                    class="text-xs text-gray-600"
+                    data-i18n="contact_form_subscribe"
+                  >
+                    I would like important updates and news sent to my email
+                  </label>
+                </div>
+
+                <div class="flex items-start space-x-2">
+                  <input
+                    type="checkbox"
+                    name="agree"
+                    required
+                    class="w-3.5 h-3.5 text-green-600 focus:ring-green-500 border-gray-300 rounded"
+                  />
+                  <label class="text-xs text-gray-600">
+                    <span data-i18n="contact_form_agree">I agree to</span>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="text-green-600 hover:text-green-700"
+                      data-i18n="contact_form_privacy"
+                    >
+                      privacy policy
+                    </a>
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-2 text-sm rounded-lg font-medium hover:from-green-700 hover:to-green-800 transition-all duration-300 shadow-lg"
+                  data-i18n="contact_form_submit"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="space-y-8">
+              <div class="text-center lg:text-left">
+                <h2
+                  class="text-3xl font-bold text-green-700 mb-4"
+                  data-i18n="contact_info_title"
+                >
+                  Contact Information
+                </h2>
+                <p class="text-gray-600" data-i18n="contact_info_subtitle">
+                  Have questions about our services? We're here to help. Reach
+                  out to us through any of the channels below.
+                </p>
+              </div>
+
+              <div class="space-y-6">
+                <div class="flex items-start space-x-4">
+                  <div class="text-2xl text-green-600">📍</div>
+                  <div>
+                    <h3
+                      class="text-xl font-bold text-green-700 mb-2"
+                      data-i18n="contact_info_office_title"
+                    >
+                      Our Office
+                    </h3>
+                    <p
+                      class="text-gray-600"
+                      data-i18n="contact_info_office_address"
+                    >
+                      801, Totu Valley, 2-37, Hangangno 2-ga,<br />
+                      Yongsan-gu, Seoul (near Sinyongsan Station)
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                  <div class="text-2xl text-green-600">📧</div>
+                  <div>
+                    <h3
+                      class="text-xl font-bold text-green-700 mb-2"
+                      data-i18n="contact_info_email_title"
+                    >
+                      Email Us
+                    </h3>
+                    <a
+                      href="mailto:info@g3globalagency.com"
+                      class="text-green-600 hover:text-green-700"
+                      data-i18n="contact_info_email"
+                    >
+                      info@g3globalagency.com
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                  <div class="text-2xl text-green-600">📞</div>
+                  <div>
+                    <h3
+                      class="text-xl font-bold text-green-700 mb-2"
+                      data-i18n="contact_info_phone_title"
+                    >
+                      Call Us
+                    </h3>
+                    <a
+                      href="tel:+821054466263"
+                      class="text-green-600 hover:text-green-700"
+                      data-i18n="contact_info_phone"
+                    >
+                      +82 10-5446-6263
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Images Grid -->
+              <div class="grid grid-cols-2 gap-4 mt-8">
+                <div class="aspect-w-16 aspect-h-9">
+                  <img
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+                    alt="Contact Visual 1"
+                    class="w-full h-full object-cover rounded-lg"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="aspect-w-16 aspect-h-9">
+                  <img
+                    src="https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+                    alt="Contact Visual 2"
+                    class="w-full h-full object-cover rounded-lg"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="aspect-w-16 aspect-h-9">
+                  <img
+                    src="https://www.socialpilot.co/wp-content/uploads/2024/02/Influencer-Marketing-Statistics.jpg"
+                    alt="Contact Visual 3"
+                    class="w-full h-full object-cover rounded-lg"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="aspect-w-16 aspect-h-9">
+                  <img
+                    src="https://grin.co/wp-content/uploads/2020/08/IM_SA_Influencers_for_Every_Stage_of_the_Influencer_Marketing_Funnel_2022-Q3-07_FINAL_BLGI_960x640_01-1.webp"
+                    alt="Contact Visual 4"
+                    class="w-full h-full object-cover rounded-lg"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        /* Tab Styles */
+        .tab-active {
+          color: #059669;
+          border-bottom-color: #059669;
+        }
+        .tab-inactive {
+          color: #6b7280;
+          border-bottom-color: transparent;
+        }
+        .tab-inactive:hover {
+          color: #059669;
+        }
+
+        /* Safari Select Fixes */
+        select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+          background-repeat: no-repeat;
+          background-position: right 0.7rem center;
+          background-size: 1em;
+          padding-right: 2.5rem;
+        }
+
+        select::-ms-expand {
+          display: none;
+        }
+
+        /* Ensure select text is visible */
+        select option {
+          color: #374151;
+          background-color: white;
+        }
+      </style>
+
+      <script>
+        function switchForm(type) {
+          const companyForm = document.getElementById("companyForm");
+          const influencerForm = document.getElementById("influencerForm");
+          const companyTab = document.getElementById("companyTab");
+          const influencerTab = document.getElementById("influencerTab");
+
+          if (type === "company") {
+            companyForm.classList.remove("hidden");
+            influencerForm.classList.add("hidden");
+            companyTab.classList.add("tab-active");
+            companyTab.classList.remove("tab-inactive");
+            influencerTab.classList.remove("tab-active");
+            influencerTab.classList.add("tab-inactive");
+          } else {
+            companyForm.classList.add("hidden");
+            influencerForm.classList.remove("hidden");
+            companyTab.classList.remove("tab-active");
+            companyTab.classList.add("tab-inactive");
+            influencerTab.classList.add("tab-active");
+            influencerTab.classList.remove("tab-inactive");
+          }
+        }
+
+        // Initialize forms
+        document.addEventListener("DOMContentLoaded", function () {
+          // Set up company form submission
+          document
+            .getElementById("companyForm")
+            .addEventListener("submit", handleFormSubmit);
+          // Set up influencer form submission
+          document
+            .getElementById("influencerForm")
+            .addEventListener("submit", handleFormSubmit);
+        });
+
+        // Form submission handler
+        async function handleFormSubmit(e) {
+          e.preventDefault();
+          const formData = new FormData(this);
+          const data = Object.fromEntries(formData.entries());
+
+          try {
+            const response = await fetch("http://localhost:3001/send-email", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+              alert("Email sent successfully!");
+              this.reset();
+            } else {
+              alert("Failed to send. Please try again.");
+            }
+          } catch (error) {
+            console.error("Error:", error);
+            alert("An error occurred. Please try again.");
+          }
+        }
+      </script>
+    </main>
+
+    <!-- Footer will be injected here -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script>
+      console.log("contact.html loaded");
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

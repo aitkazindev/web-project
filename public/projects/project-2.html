@@ -1,0 +1,600 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="project_2_tag_title">G3 Global Agency</title>
+
+    <!-- Mobile-friendly meta tags -->
+    <meta name="theme-color" content="#10B981" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap&subset=cyrillic,latin,korean"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css" />
+
+    <style>
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+      .hover\:float:hover {
+        animation: float 2s ease-in-out infinite;
+      }
+
+      .pattern-overlay {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2310b981' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+    </style>
+  </head>
+  <body class="max-w-7xl mx-auto bg-gray-50">
+    <!-- Header will be injected here -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="w-full">
+      <!-- Title Section -->
+      <section
+        class="py-16 bg-gradient-to-br from-green-50 to-white pattern-overlay relative overflow-hidden"
+        data-aos="fade-up"
+      >
+        <!-- Decorative Elements -->
+        <div
+          class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none"
+        >
+          <div
+            class="absolute -top-10 -left-10 w-40 h-40 bg-green-100 rounded-full opacity-30 animate-pulse"
+          ></div>
+          <div
+            class="absolute top-1/2 -right-20 w-60 h-60 bg-green-50 rounded-full opacity-30 animate-pulse"
+            style="animation-delay: 1s"
+          ></div>
+          <div
+            class="absolute -bottom-20 left-1/3 w-40 h-40 bg-green-100 rounded-full opacity-30 animate-pulse"
+            style="animation-delay: 2s"
+          ></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+          <!-- Category Badge -->
+          <div class="flex justify-center mb-6">
+            <span
+              class="inline-flex items-center px-4 py-2 rounded-full bg-green-100 text-green-700 font-medium text-sm shadow-sm"
+            >
+              <i class="fas fa-store mr-2 text-green-500"></i>
+              <span data-i18n="project_2_tag_main_category"
+                >Tech-Store · 2024</span
+              >
+            </span>
+          </div>
+
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-bold text-green-800 mb-8 text-center leading-tight"
+            data-i18n="project_2_tag_main_title"
+          >
+            Tech-Store Promoting Campaign
+          </h1>
+        </div>
+      </section>
+
+      <!-- Description and Media Combined Section -->
+      <section class="py-12 bg-white" data-aos="fade-up">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            <!-- Left Column: Description and Stats -->
+            <div class="space-y-8">
+              <!-- Description -->
+              <div class="relative">
+                <div
+                  class="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-green-400 to-green-600 rounded-full"
+                ></div>
+                <h2
+                  class="text-3xl md:text-4xl font-bold text-green-700 mb-6 relative"
+                >
+                  <span class="relative inline-block">Campaign Overview</span>
+                </h2>
+                <p
+                  class="text-lg leading-relaxed text-gray-600 pl-4"
+                  data-i18n="project_2_tag_description"
+                >
+                  A comprehensive marketing campaign was launched to introduce a
+                  Korean smart tech store to the Mongolian and CIS markets.
+                  Through strategic collaborations with tech influencers and
+                  targeted social media campaigns, we successfully established
+                  the brand's presence in the region. The campaign focused on
+                  showcasing the store's unique product offerings and
+                  exceptional customer service.
+                </p>
+              </div>
+
+              <!-- Statistics -->
+              <div
+                class="bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 shadow-lg"
+              >
+                <h3 class="text-2xl font-bold text-green-700 mb-6 text-center">
+                  Campaign Impact
+                </h3>
+                <div class="grid grid-cols-2 gap-6">
+                  <div
+                    class="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 text-center"
+                  >
+                    <div
+                      class="text-3xl font-bold text-green-600 mb-2 transform transition-transform duration-300 group-hover:scale-110"
+                      data-i18n="project_2_tag_views_value"
+                    >
+                      98,234
+                    </div>
+                    <p
+                      class="text-gray-600"
+                      data-i18n="project_2_tag_views_label"
+                    >
+                      Views
+                    </p>
+                  </div>
+                  <div
+                    class="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 text-center"
+                  >
+                    <div
+                      class="text-3xl font-bold text-green-600 mb-2 transform transition-transform duration-300 group-hover:scale-110"
+                      data-i18n="project_2_tag_engagements_value"
+                    >
+                      45,678
+                    </div>
+                    <p
+                      class="text-gray-600"
+                      data-i18n="project_2_tag_engagements_label"
+                    >
+                      Engagements
+                    </p>
+                  </div>
+                  <div
+                    class="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 text-center"
+                  >
+                    <div
+                      class="text-3xl font-bold text-green-600 mb-2 transform transition-transform duration-300 group-hover:scale-110"
+                      data-i18n="project_2_tag_inquiries_value"
+                    >
+                      280
+                    </div>
+                    <p
+                      class="text-gray-600"
+                      data-i18n="project_2_tag_inquiries_label"
+                    >
+                      Store Inquiries
+                    </p>
+                  </div>
+                  <div
+                    class="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 text-center"
+                  >
+                    <div
+                      class="text-3xl font-bold text-green-600 mb-2 transform transition-transform duration-300 group-hover:scale-110"
+                      data-i18n="project_2_tag_sales_value"
+                    >
+                      150
+                    </div>
+                    <p
+                      class="text-gray-600"
+                      data-i18n="project_2_tag_sales_label"
+                    >
+                      Products Sold
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Media -->
+            <div class="relative">
+              <div
+                class="absolute -top-4 -right-4 w-24 h-24 bg-green-100 rounded-full opacity-50 animate-pulse"
+              ></div>
+              <div
+                class="absolute -bottom-4 -left-4 w-32 h-32 bg-green-50 rounded-full opacity-50 animate-pulse"
+                style="animation-delay: 1s"
+              ></div>
+              <div class="flex justify-center relative z-10">
+                <div
+                  class="w-full max-w-sm rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <div class="w-full">
+                    <video
+                      class="w-full h-auto"
+                      src="../assets/videos/techstore.mp4"
+                      poster="../assets/images/techstore.png"
+                      alt="Campaign Video 1"
+                      controls
+                      preload="metadata"
+                    ></video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Other Works -->
+      <section class="py-12 bg-white" data-aos="fade-up">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex justify-between items-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-green-700 relative">
+              <span
+                class="relative inline-block"
+                data-i18n="project_2_tag_other_works_title"
+                >OTHER WORKS</span
+              >
+            </h2>
+            <a href="work.html">
+              <button
+                class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md"
+                data-i18n="project_2_tag_view_all_button"
+              >
+                VIEW ALL
+              </button>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Portfolio Item 1 -->
+            <!-- Portfolio Item 1 -->
+            <article
+              class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <!-- Image Container with Overlay -->
+              <div class="relative h-72 overflow-hidden">
+                <img
+                  src="/assets/images/missgold.jpg"
+                  alt="Portfolio Image"
+                  class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <!-- Gradient Overlay -->Usage of the beauty device,
+                instructions for use, and discount information
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-60"
+                ></div>
+                <!-- Category Badge -->
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white/90 text-green-800 backdrop-blur-sm"
+                    data-i18n="projects_tags_category_beauty_lifestyle"
+                  >
+                    Beauty, Lifestyle
+                  </span>
+                </div>
+                <!-- Year Badge -->
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white/90 text-gray-800 backdrop-blur-sm"
+                  >
+                    2024
+                  </span>
+                </div>
+                <!-- Stats Overlay -->
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"
+                >
+                  <div class="grid grid-cols-3 gap-4 text-white text-center">
+                    <div>
+                      <div class="text-xl font-bold">152,474</div>
+                      <div class="text-sm opacity-80">Views</div>
+                    </div>
+                    <div>
+                      <div class="text-xl font-bold">69,445</div>
+                      <div class="text-sm opacity-80">Reach</div>
+                    </div>
+                    <div>
+                      <div class="text-xl font-bold">350</div>
+                      <div class="text-sm opacity-80">Inquiries</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Content Container -->
+              <div
+                class="relative p-6 bg-gradient-to-br from-white to-green-50"
+              >
+                <!-- Decorative Icon -->
+                <div
+                  class="absolute -top-6 left-6 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg transform transition-transform duration-300 group-hover:scale-110"
+                >
+                  <i class="fas fa-spa text-green-500 text-xl"></i>
+                </div>
+                <!-- Title and Description -->
+                <h3
+                  class="text-xl font-bold text-green-700 mb-3 mt-2"
+                  data-i18n="projects_tags_item1_title"
+                >
+                  Medicube Booster Pro Mini
+                </h3>
+                <p
+                  class="text-gray-600 mb-4 line-clamp-2"
+                  data-i18n="projects_tags_item1_description"
+                >
+                  Usage of the beauty device, instructions for use, and discount
+                  information
+                </p>
+                <!-- View Project Link -->
+                <a
+                  href="/projects/project-1.html"
+                  class="inline-flex items-center text-green-700 font-semibold hover:text-green-600 transition-colors group-hover:translate-x-2 duration-300"
+                  data-i18n="projects_tags_view_project"
+                >
+                  View Project
+                  <svg
+                    class="w-5 h-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Portfolio Item 2 -->
+            <article
+              class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <!-- Image Container with Overlay -->
+              <div class="relative h-72 overflow-hidden">
+                <img
+                  src="/assets/images/onoko_tergel.png"
+                  alt="Portfolio Image"
+                  class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <!-- Gradient Overlay -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-60"
+                ></div>
+                <!-- Category Badge -->
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white/90 text-green-800 backdrop-blur-sm"
+                    data-i18n="projects_tags_category_beauty"
+                  >
+                    Beauty
+                  </span>
+                </div>
+                <!-- Year Badge -->
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white/90 text-gray-800 backdrop-blur-sm"
+                  >
+                    2024
+                  </span>
+                </div>
+                <!-- Stats Overlay -->
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"
+                >
+                  <div class="grid grid-cols-3 gap-4 text-white text-center">
+                    <div>
+                      <div class="text-xl font-bold">62,546</div>
+                      <div class="text-sm opacity-80">Views</div>
+                    </div>
+                    <div>
+                      <div class="text-xl font-bold">39,479</div>
+                      <div class="text-sm opacity-80">Reach</div>
+                    </div>
+                    <div>
+                      <div class="text-xl font-bold">655</div>
+                      <div class="text-sm opacity-80">Inquiries</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Content Container -->
+              <div
+                class="relative p-6 bg-gradient-to-br from-white to-green-50"
+              >
+                <!-- Decorative Icon -->
+                <div
+                  class="absolute -top-6 left-6 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg transform transition-transform duration-300 group-hover:scale-110"
+                >
+                  <i class="fas fa-store text-green-500 text-xl"></i>
+                </div>
+                <!-- Title and Description -->
+                <h3
+                  class="text-xl font-bold text-green-700 mb-3 mt-2"
+                  data-i18n="projects_tags_item2_title"
+                >
+                  Medicube Booster pro and mini
+                </h3>
+                <p
+                  class="text-gray-600 mb-4 line-clamp-2"
+                  data-i18n="projects_tags_item2_description"
+                >
+                  Usage of the beauty device, instructions for use, and discount
+                  information
+                </p>
+                <!-- View Project Link -->
+                <a
+                  href="/projects/project-2.html"
+                  class="inline-flex items-center text-green-700 font-semibold hover:text-green-600 transition-colors group-hover:translate-x-2 duration-300"
+                  data-i18n="projects_tags_view_project"
+                >
+                  View Project
+                  <svg
+                    class="w-5 h-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Portfolio Item 3 -->
+            <article
+              class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <!-- Image Container with Overlay -->
+              <div class="relative h-72 overflow-hidden">
+                <img
+                  src="/assets/images/huuchniiduu.png"
+                  alt="Portfolio Image"
+                  class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <!-- Gradient Overlay -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-60"
+                ></div>
+                <!-- Category Badge -->
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white/90 text-green-800 backdrop-blur-sm"
+                    data-i18n="projects_tags_category_lifestyle"
+                  >
+                    Lifestyle
+                  </span>
+                </div>
+                <!-- Year Badge -->
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white/90 text-gray-800 backdrop-blur-sm"
+                  >
+                    2025
+                  </span>
+                </div>
+                <!-- Stats Overlay -->
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"
+                >
+                  <div class="grid grid-cols-3 gap-4 text-white text-center">
+                    <div>
+                      <div class="text-xl font-bold">380,434</div>
+                      <div class="text-sm opacity-80">Views</div>
+                    </div>
+                    <div>
+                      <div class="text-xl font-bold">192,228</div>
+                      <div class="text-sm opacity-80">Reach</div>
+                    </div>
+                    <div>
+                      <div class="text-xl font-bold">780</div>
+                      <div class="text-sm opacity-80">Inquiries</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Content Container -->
+              <div
+                class="relative p-6 bg-gradient-to-br from-white to-green-50"
+              >
+                <!-- Decorative Icon -->
+                <div
+                  class="absolute -top-6 left-6 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg transform transition-transform duration-300 group-hover:scale-110"
+                >
+                  <i class="fas fa-magic text-green-500 text-xl"></i>
+                </div>
+                <!-- Title and Description -->
+                <h3
+                  class="text-xl font-bold text-green-700 mb-3 mt-2"
+                  data-i18n="projects_tags_item3_title"
+                >
+                  Store Introduction
+                </h3>
+                <p
+                  class="text-gray-600 mb-4 line-clamp-2"
+                  data-i18n="projects_tags_item3_description"
+                >
+                  Product introductions and store information
+                </p>
+                <!-- View Project Link -->
+                <a
+                  href="/projects/project-3.html"
+                  class="inline-flex items-center text-green-700 font-semibold hover:text-green-600 transition-colors group-hover:translate-x-2 duration-300"
+                  data-i18n="projects_tags_view_project"
+                >
+                  View Project
+                  <svg
+                    class="w-5 h-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section
+        class="py-16 bg-gradient-to-br from-green-600 to-green-700 rounded-xl text-white text-center px-4 mb-16 mx-4 md:mx-12 shadow-lg"
+        data-aos="fade-up"
+      >
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-4"
+          data-i18n="project_2_tag_cta_title"
+        >
+          Want Results Like These?
+        </h2>
+        <p
+          class="text-xl mb-8 max-w-2xl mx-auto"
+          data-i18n="project_2_tag_cta_description"
+        >
+          Let's create unforgettable campaigns together. We're ready when you
+          are.
+        </p>
+        <a
+          href="contact.html"
+          class="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md inline-block"
+          data-i18n="project_2_tag_cta_button"
+          >Contact Our Team</a
+        >
+      </section>
+    </main>
+
+    <!-- Footer will be injected here -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="../script.js"></script>
+  </body>
+</html>

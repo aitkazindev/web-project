@@ -1,0 +1,303 @@
+/* Typography System */
+:root {
+  /* Font Families */
+  --font-primary:
+    "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-korean:
+    "Noto Sans KR", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+  /* Font Sizes - Mobile First */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --text-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --text-3xl: clamp(2rem, 1.8rem + 1.25vw, 2.5rem);
+  --text-4xl: clamp(2.5rem, 2.3rem + 1.5vw, 3rem);
+
+  /* Line Heights */
+  --leading-tight: 1.2;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+
+  /* Letter Spacing */
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+
+  /* Colors - Professional Green Theme */
+  --primary: #22c55e; /* text-green-500 */
+  --primary-dark: #16a34a; /* text-green-600 */
+  --primary-light: #4ade80; /* text-green-400 */
+  --text-dark: #000000; /* Pure Black */
+  --text-light: #333333; /* Dark Gray */
+  --background: #ffffff; /* Pure White */
+  --background-alt: #f5f5f5; /* Light Gray */
+  --accent: #16a34a; /* text-green-600 */
+  --accent-light: #dcfce7; /* text-green-100 */
+  --border: #000000; /* Black Border */
+
+  /* Spacing */
+  --spacing-unit: 1rem;
+  --spacing-xs: calc(var(--spacing-unit) * 0.25);
+  --spacing-sm: calc(var(--spacing-unit) * 0.5);
+  --spacing-md: var(--spacing-unit);
+  --spacing-lg: calc(var(--spacing-unit) * 1.5);
+  --spacing-xl: calc(var(--spacing-unit) * 2);
+  --spacing-2xl: calc(var(--spacing-unit) * 3);
+  --spacing-3xl: calc(var(--spacing-unit) * 4);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 12px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 12px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-normal);
+  color: var(--text-dark);
+  background-color: var(--background);
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  font-weight: 800;
+  margin-bottom: var(--spacing-md);
+}
+
+h1 {
+  font-size: var(--text-4xl);
+}
+h2 {
+  font-size: var(--text-3xl);
+}
+h3 {
+  font-size: var(--text-2xl);
+}
+h4 {
+  font-size: var(--text-xl);
+}
+h5 {
+  font-size: var(--text-lg);
+}
+h6 {
+  font-size: var(--text-base);
+}
+
+p {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Korean Text */
+[lang="ko"] {
+  font-family: var(--font-korean);
+}
+
+/* Navigation */
+nav {
+  background-color: var(--background);
+  /* box-shadow: var(--shadow-sm); */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: var(--primary);
+  padding: var(--spacing-sm) 0;
+  font-size: var(--text-base);
+  font-weight: 800;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav a:hover {
+  color: var(--primary-light);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Buttons */
+button,
+.button {
+  background-color: var(--primary);
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: var(--text-base);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+button:hover,
+.button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Cards */
+.card {
+  background: var(--background);
+  border-radius: 1rem;
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Sections */
+section {
+  margin-bottom: 10px;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+/* Footer */
+footer {
+  /* padding: var(--spacing-3xl) 0; */
+  /* margin-top: var(--spacing-3xl); */
+}
+
+footer a {
+  color: var(--primary);
+  /* padding: var(--spacing-sm) 0; */
+  font-size: var(--text-base);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--primary-light);
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .container {
+    padding: var(--spacing-lg);
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Accessibility */
+/* :focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+} */
+
+/* Utility Classes */
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+}
+
+/* Image Styles */
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
